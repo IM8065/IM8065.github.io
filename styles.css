@@ -1,0 +1,63 @@
+ul {
+  list-style: none;
+}
+
+/* li:hover {
+  background: pink;
+  height: 200px;
+  width: 200px;
+} */
+body {
+  background: url("black_wolf.jpg") no-repeat center;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px 0;
+  font-size: 20px;
+  background: rgba(79, 4, 164, 0.9668242296918768);
+
+  /* background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  ); */
+}
+
+a:hover {
+  color: black;
+  height: 100px;
+  width: 100px;
+  background: #783573;
+}
+
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 40px 0;
+  font-size: 20px;
+}
+
+.main-nav ul li {
+  padding: 0 10px;
+}
+
+/* .social {
+  margin-right: 100px;
+  color: red;
+} */
+
+.text {
+  font-size: 100px;
+  color: antiquewhite;
+  background: grey;
+}
