@@ -1,16 +1,159 @@
-ul {
-  list-style: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* li:hover {
-  background: pink;
-  height: 200px;
-  width: 200px;
-} */
 body {
-  background: url("black_wolf.jpg") no-repeat center;
+  font-family: "Roboto", sans-serif;
+  background-color: #272121;
+  color: white;
 }
-a {
+
+/* .container {
+  display: grid;
+  grid-template-columns: 1fr;
+} */
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+
+  /* background-color: black; */
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid #fbbb19;
+}
+
+.nav-link-wrapper a:hover {
+  color: #fbbb19;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid #fbbb19;
+}
+
+.active-nav-link a {
+  color: #fbbb19 !important;
+}
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+.img-text-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: lightseagreen;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+.image {
+  background-image: url("black_wolf.jpg");
+  background-color: #cccccc;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.text {
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fbbb19;
+}
+
+/* .text,
+h1 {
+  font-size: 40px;
+} */
+/* 
+button {
+  color: black;
+  background: #d5dfed;
+  border: 1px #dadada solid;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 15pt;
+  outline: none;
+  opacity: 0.89;
+} */
+
+/* a {
   color: white;
   text-decoration: none;
 }
@@ -22,42 +165,43 @@ a {
   height: 60px;
   padding: 20px 0;
   font-size: 20px;
-  background: rgba(79, 4, 164, 0.9668242296918768);
+  background: black;
+} */
+  /* background: linear-gradient(90deg, blue 0%, purple 50%, red 80%); */
 
-  /* background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  ); */
-}
 
-a:hover {
-  color: black;
+/* a:hover {
+  color: #fbbb19;
   height: 100px;
   width: 100px;
-  background: #783573;
-}
-
-.main-nav ul {
+  
+} */
+/* background: #fbbb19; */
+/* ul {
   display: flex;
   align-items: center;
-  height: 60px;
-  padding: 40px 0;
+  justify-content: end;
   font-size: 20px;
 }
 
 .main-nav ul li {
   padding: 0 10px;
-}
+} */
 
 /* .social {
   margin-right: 100px;
   color: red;
 } */
 
-.text {
-  font-size: 100px;
-  color: antiquewhite;
-  background: grey;
+/* .main-menu {
+  display: flex;
 }
+
+*/
+
+footer {
+  background: #272121;
+  height: 50px;
+  float: right;
+  color: #fbbb19;
+} 
